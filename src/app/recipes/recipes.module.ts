@@ -5,6 +5,10 @@ import {RecipeDetailComponent} from './recipe-detail/recipe-detail.component';
 import {RecipeItemComponent} from './recipe-list/recipe-item/recipe-item.component';
 import {RecipeHomeComponent} from './recipe-home/recipe-home.component';
 import {RecipeEditComponent} from './recipe-edit/recipe-edit.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
+import {RouterModule} from '@angular/router';
+import {RecipesRoutingModule} from './recipes-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +18,12 @@ import {RecipeEditComponent} from './recipe-edit/recipe-edit.component';
     RecipeItemComponent,
     RecipeHomeComponent,
     RecipeEditComponent,
+  ],
+  imports: [
+    RouterModule,
+    CommonModule,
+    ReactiveFormsModule,
+    RecipesRoutingModule
   ]
 })
 export class RecipesModule {
