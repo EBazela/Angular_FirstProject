@@ -4,6 +4,7 @@ import {ShoppingEditComponent} from './shopping-edit/shopping-edit.component';
 import {RouterModule} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
+import {LoggingService} from '../logging.service';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import {FormsModule} from '@angular/forms';
     CommonModule,
     FormsModule,
     RouterModule.forChild([{path: '', component: ShoppingListComponent}])
+  ], providers: [
+    LoggingService
   ]
 })
 
